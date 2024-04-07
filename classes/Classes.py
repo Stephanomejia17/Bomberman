@@ -59,4 +59,35 @@ class LinkedList:
             node.next = aux_node
 
 
+class LinkedMatrix:
+    def __init__(self) -> None:
+        self.linkedMatrix: list = []
+        self.size: int = 0
 
+    def traverse(self, i=-1):
+        if self.size == 0:
+            return
+        if i == self.size - 1:
+            return
+        else:
+            i += 1
+            self.linkedMatrix[i].traverse()
+            self.traverse(i)
+
+    def append(self, new_node: Node):
+        self.linkedMatrix.append(new_node)
+        self.size += 1
+
+    def preppend(self, new_node: Node):
+        self.linkedMatrix.insert(0, new_node)
+        self.size += 1
+
+    def delete_at_index(self, index):
+        if index > self.size - 1:
+            raise IndexError
+        else:
+            self.linkedMatrix.pop(index)
+            self.size -= 1
+
+    def getSize(self) -> int:
+        return self.size
