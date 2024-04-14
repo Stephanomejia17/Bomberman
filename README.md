@@ -1,4 +1,5 @@
 # Bomberman
+## Listas enlazadas - 2024-1
 El objetivo de esta práctica es diseñar e implementar una versión básica del juego Bomberman, utilizando exclusivamente listas enlazadas para gestionar el mapa del juego, el jugador principal, los enemigos, y los obstáculos. Esta versión simplificada del juego debe permitir al jugador moverse, colocar bombas, destruir obstáculos, eliminar enemigos, y recoger habilidades para aumentar su capacidad de destrucción y supervivencia.
 
 ### Descripción del Problema:
